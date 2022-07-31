@@ -1,0 +1,116 @@
+<div class="buy-now is-hidden">
+  <div class="buy-now__modal">
+    <button type="button" class="close-icon">
+      <svg class="buy-now__icon-close" width="11" height="11">
+        <use href="./images/icons.svg#icon-svg-button-close"></use>
+      </svg>
+    </button>
+    <h2 class="buy-now__title">Make your choice</h2>
+    <ul class="buy-now__list">
+      <li class="buy-now__item buy-now__item--first">
+        <img
+          class="buy-now__image"
+          srcset="./images/shop/buy1-1x.png 1x, ./images/shop/buy1-2x.png 2x"
+          src="./images/shop/buy1-1x.png"
+          alt="ice cream"
+          width="100"
+        />
+        <p class="buy-now__description">ice cream</p>
+        <div class="buy-now__quantity-wrapper">
+          <a
+            class="quantity quantity--minus"
+            onclick="return false;"
+            id="minusFirst"
+            ><svg class="buy-now__icon" width="20" height="20">
+              <use href="./images/icons.svg#minus"></use>
+            </svg>
+          </a>
+          <div class="buy-now__input" id="firstCount">0</div>
+          <a
+            class="quantity quantity__plus"
+            onclick="return false;"
+            id="plusFirst"
+            ><svg class="buy-now__icon" width="15" height="15">
+              <use href="./images/icons.svg#plus"></use>
+            </svg>
+          </a>
+        </div>
+        <a href="#" class="buy-now__cart" onclick="return false;">
+          <svg class="buy-now__icon" width="30" height="30">
+            <use href="./images/icons.svg#basket"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="buy-now__item buy-now__item--second">
+        <img
+          class="buy-now__image"
+          srcset="./images/shop/buy2-1x.png 1x, ./images/shop/buy2-2x.png 2x"
+          src="./images/shop/buy2-1x.png"
+          alt="ice cream"
+          width="100"
+        />
+        <p class="buy-now__description">ice coffee</p>
+        <div class="buy-now__quantity-wrapper">
+          <a
+            class="quantity quantity--minus"
+            id="minusSecond"
+            onclick="return false;"
+            ><svg class="buy-now__icon" width="20" height="20">
+              <use href="./images/icons.svg#minus"></use>
+            </svg>
+          </a>
+          <div class="buy-now__input" id="secondCount">0</div>
+          <a
+            class="quantity quantity--plus"
+            id="plusSecond"
+            onclick="return false;"
+            ><svg class="buy-now__icon" width="15" height="15">
+              <use href="./images/icons.svg#plus"></use>
+            </svg>
+          </a>
+        </div>
+        <a href="#" class="buy-now__cart" onclick="return false;">
+          <svg class="buy-now__icon" width="30" height="30">
+            <use href="./images/icons.svg#basket"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="buy-now__item buy-now__item--third">
+        <img
+          class="buy-now__image"
+          srcset="./images/shop/buy3-1x.png 1x, ./images/shop/buy3-2x.png 2x"
+          src="./images/shop/buy3-1x.png"
+          alt="ice cream"
+          width="100"
+        />
+        <p class="buy-now__description">milkshakes</p>
+        <div class="buy-now__quantity-wrapper">
+          <a
+            class="quantity quantity--minus"
+            onclick="return false;"
+            id="minusThird"
+            ><svg class="buy-now__icon" width="20" height="20">
+              <use href="./images/icons.svg#minus"></use>
+            </svg>
+          </a>
+          <div class="buy-now__input" id="thirdCount">0</div>
+          <a
+            class="quantity quantity--plus"
+            onclick="return false;"
+            id="plusThird"
+            ><svg class="buy-now__icon" width="15" height="15">
+              <use href="./images/icons.svg#plus"></use>
+            </svg>
+          </a>
+        </div>
+        <a class="buy-now__cart" onclick="return false;" id="thirdPlus">
+          <svg class="buy-now__icon" width="30" height="30">
+            <use href="./images/icons.svg#basket"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <a href="#" class="overlay buy-now-close is-hidden" onclick="return false;">
+  </a>
+</div>

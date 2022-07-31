@@ -1,0 +1,20 @@
+//utils
+@import './utils/vars';
+@import './utils/common';
+@import './utils/reset';
+@import './utils/mixins';
+@import './utils/base';
+@import './utils/buttons';
+@import './utils/videotube';
+//sections
+@import './layers/header';
+@import './layers/hero';
+@import './layers/products';
+@import './layers/about';
+@import './layers/advantages';
+@import './layers/gallery';
+@import './layers/customer-reviews';
+@import './layers/contacts';
+@import './layers/footer';
+@import './layers/about-modal';
+@import './layers/buy-now-modal';

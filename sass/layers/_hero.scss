@@ -1,0 +1,319 @@
+.hero .container {
+  padding-top: 136px;
+  @media screen and (min-width: $tablet-width) {
+    // position: relative;
+    height: 100%;
+  }
+}
+
+.hero {
+  position: relative;
+  background-color: #ffb8ca;
+  height: 502px;
+  overflow: hidden;
+  padding-top: 63px;
+  @media screen and (min-width: $tablet-width) {
+    overflow: visible;
+    padding-top: 97px;
+    height: 416px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    overflow: visible;
+    padding-top: 147px;
+    height: 664px;
+  }
+
+  &--center {
+    position: relative;
+    z-index: 1;
+    // margin-top: 136px;
+    @media screen and (min-width: $tablet-width) {
+      // margin-top: 0;
+      overflow: visible;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &--title {
+    font-family: "Titan One";
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    letter-spacing: 0;
+
+    color: var(--primare-bg-color);
+    width: 218px;
+    // height: 106px;
+    margin-bottom: 20px;
+    @media screen and (min-width: $tablet-width) {
+      font-size: 22px;
+      line-height: 1.13;
+      width: 162px;
+      // height: 80px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      font-size: 38px;
+      line-height: 1.15;
+      width: 227px;
+      height: 137px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    margin-bottom: 20px;
+    @media screen and (min-width: $desktop-width) {
+      margin-bottom: 40px;
+    }
+  }
+  &__item:nth-child(2) {
+    margin-left: 8px;
+  }
+
+  &__title--label {
+    font-family: "Titan One";
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 0.95;
+
+    text-transform: uppercase;
+
+    color: var(--accent-color);
+    @media screen and (min-width: $tablet-width) {
+      font-size: 34px;
+      line-height: 0.91;
+    }
+    @media screen and (min-width: $desktop-width) {
+      font-size: 58px;
+      line-height: 0.9;
+    }
+  }
+
+  &__btn {
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: url("../images/hero/cursor-icecream.png"), auto;
+  }
+
+  &__btn--made {
+    color: var(--accent-color);
+
+    background: var(--primare-bg-color);
+    border: none;
+    width: 82px;
+    height: 24px;
+    @media screen and (min-width: $tablet-width) {
+      font-size: 8px;
+      line-height: 1.25;
+      width: 82px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      font-size: 14px;
+      line-height: 1.3;
+      width: 138px;
+      height: 40px;
+    }
+  }
+  &__btn--made,
+  &__btn--product {
+    transition: background-color var(--time-duration) var(--timing-function);
+  }
+
+  &__btn--product {
+    background: var(--accent-color);
+    color: var(--primare-bg-color);
+    border: none;
+    width: 62px;
+    height: 24px;
+    @media screen and (min-width: $tablet-width) {
+      font-size: 8px;
+      line-height: 1.25;
+      width: 61px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      font-size: 14px;
+      line-height: 1.3;
+      width: 107px;
+      height: 40px;
+    }
+  }
+
+  &--circle {
+    position: absolute;
+    width: 346px;
+    height: 344px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--secondary-accent-color);
+    padding: 0;
+    top: 83px;
+    transform: translateX(5%);
+    @media screen and (min-width: $tablet-width) {
+      width: 335px;
+      height: 333px;
+      transform: translateX(65%);
+      transform: translateX(0);
+      top: 43px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      width: 534px;
+      height: 534px;
+      transform: translateX(100%);
+      top: 54px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 9px;
+    left: 81px;
+    @media screen and (min-width: $tablet-width) {
+      top: 37px;
+      left: 74px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      top: 54px;
+      left: 119px;
+    }
+  }
+}
+
+.namber {
+  display: none;
+  @media screen and (min-width: $tablet-width) {
+    display: contents;
+  }
+  &__list {
+    @media screen and (min-width: $desktop-width) {
+      padding-top: 68px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 16px;
+  }
+  &__label {
+    font-family: "Titan One";
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 1.14;
+
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--accent-color);
+    @media screen and (min-width: $desktop-width) {
+      font-size: 46px;
+      line-height: 1.15;
+    }
+  }
+  &__name {
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+    color: var(--primare-bg-color);
+    @media screen and (min-width: $desktop-width) {
+      font-size: 14px;
+      line-height: 1.28;
+    }
+  }
+
+  &__fon {
+    background-color: var(--primare-bg-color);
+    position: absolute;
+    z-index: -1;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: -4px;
+    right: -5px;
+    @media screen and (min-width: $desktop-width) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.bio {
+  display: none;
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+  &__girl {
+    display: none;
+    @media screen and (min-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 32px;
+    }
+  }
+
+  &__text--stule {
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 1.5;
+    letter-spacing: 0;
+
+    color: var(--primare-bg-color);
+
+    width: 114px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 7px;
+    margin-top: 10px;
+    @media screen and (min-width: $desktop-width) {
+      font-size: 14px;
+      line-height: 1.4;
+      width: 200px;
+      margin-bottom: 20px;
+      margin-top: 50px;
+    }
+  }
+
+  &__btn {
+    background-color: #ffffff;
+    cursor: url("../images/hero/cursor-icecream.png"), auto;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 18px;
+    height: 18px;
+    @media screen and (min-width: $desktop-width) {
+      width: 26px;
+      height: 26px;
+    }
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
+}
+
+.hero__pic {
+  fill: var(--accent-color);
+  width: 8px;
+  width: 8px;
+  @media screen and (min-width: $desktop-width) {
+    width: 12px;
+    height: 12px;
+  }
+}
